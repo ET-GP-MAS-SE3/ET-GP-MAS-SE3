@@ -1,16 +1,10 @@
-# Nerfies
+# Distributed Event-Triggered Communication and Online Learning for Formation Control on SE(3)
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
-
-If you find Nerfies useful for your work please cite:
-```
-@article{park2021nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
-}
-```
-
-# Website License
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+This paper investigates the cooperative control of multiple rigid body systems evolving on the Lie group SE(3) with partially unknown dynamics under limited communication and computational resources. 
+To address model uncertainties, an online Gaussian process (GP) regression scheme is employed to learn the unknown dynamics from locally collected data. 
+A rigorous analysis establishes practical convergence to a time-varying leader–follower formation with a prescribed error bound, which is based on a joint condition on model accuracy and information freshness.
+To efficiently satisfy this condition, a unified event-triggered framework is developed to simultaneously regulate online learning updates and inter-agent communication. 
+The proposed mechanism effectively reduces both computational and communication loads, while preserving the desired control performance.
+It is further proven that both the learning and communication triggering schemes exclude Zeno behavior.
+Moreover, the framework enables explicit trade-offs among control performance, computational effort, and communication usage via tunable triggering parameters.
+Numerical simulations are presented to demonstrate the effectiveness and efficiency of the proposed approach.
